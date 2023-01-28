@@ -404,7 +404,11 @@ The mapping of `asset_token` to `access_tag` they give access to is configured i
       "Tell me a story about OrderedJSON",
       "What is an Ajaxian?",
       "What happened to webOS?"
-    ]
+    ],
+    "source_prefixes": {
+      "https://remix.run/": "Remix: ",
+      "https://reactrouter.com/": "React Router: "
+    }
   },
 
   "tokens": {
