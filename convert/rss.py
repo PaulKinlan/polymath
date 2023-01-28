@@ -10,12 +10,12 @@ from urllib.parse import urlparse
 
 from .chunker import generate_chunks
 
-
 class RSSImporter:
 
     def output_base_filename(self, filename):
         url = urlparse(filename)
-        return url.hostname
+        path = url.path.replace('/', '-')
+        return 'rss-%s%s' % (url.hostname, path)
        
     def get_chunks(self, filename):
         feed = feedparser.parse(filename)
