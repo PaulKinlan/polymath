@@ -26,8 +26,7 @@ class RSSImporter:
             url = entry.link
             info = {
                 'url': url,
-                'title': title,
-                'description': content.value
+                'title': title
             }
 
             text = content.value
